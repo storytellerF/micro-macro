@@ -30,6 +30,20 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
         }}
       />
+      <Tabs.Screen
+        name="setting"
+        options={{
+          title: 'Settings',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="gearshape.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="download"
+        options={{
+          title: 'Download',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="filemenu.and.cursorarrow" color={color} />,
+        }}
+      />
     </Tabs>
   );
 }
